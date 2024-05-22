@@ -1,11 +1,36 @@
 /* Divide the max width with 16 */
-
+/* BIG DESKTOP  BELOW 1440px  */
+.box {
+  height: 30rem;
+  width: 30rem;
+  margin-top: 4rem;
+}
+.heading-primary {
+  font-size: 2rem;
+  color: #362a1e;
+  text-decoration: none;
+}
+.hero-description-1 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
 /* SMALLER DESKTOP  BELOW 1344px  */
 
 @media (max-width: 84em) {
-  .section-hero {
-    max-width: 100%;
-    height: 100%;
+  .hero-description-1 {
+    font-size: 4.5rem;
+  }
+
+  .heading-primary {
+    font-size: 2.3rem;
+    color: #362a1e;
+    text-decoration: none;
+  }
+
+  .box {
+    height: 30rem;
+    width: 30rem;
+    margin-top: 4rem;
   }
   .img-news {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
@@ -19,10 +44,6 @@
 /********* LANSCAPE TABLETS  BELOW 1200px  *************/
 
 @media (max-width: 75em) {
-  .section-hero {
-    width: 100%;
-    height: 100vh;
-  }
   html {
     font-size: 56.25%;
   }
@@ -32,14 +53,9 @@
     font-size: 1.6rem;
     font-weight: 500;
   }
-  .main-nav {
-    height: 60vh;
-  }
+
   .main-nav-link {
     font-size: 10rem;
-  }
-  .other-link-1 {
-    margin-left: 47rem;
   }
 
   .other-link-2 {
@@ -49,6 +65,8 @@
 
   .hero-description-1 {
     font-size: 4.8rem;
+    margin-bottom: 6rem;
+    line-height: 1.5;
   }
   .box {
     height: 35rem;
@@ -76,10 +94,8 @@
     padding-left: 11rem;
   }
 
-  /* SECTION-INFORMATION */
-
-  .h-line {
-    width: 102rem;
+  .custom-shape-divider-bottom-1704281029 .shape-fill {
+    height: 30px;
   }
 }
 
@@ -88,12 +104,10 @@
   html {
     font-size: 50%;
   }
-  /* .main-nav {
-    height: 100vh;
-  } */
-  .section-hero {
-    width: 90%;
-    height: 60vh;
+  .hover-img {
+    height: 80px;
+    width: 80px;
+    margin-left: 0;
   }
   .heading-primary {
     font-size: 3rem;
@@ -115,11 +129,14 @@
     height: 30rem;
     margin-top: 8rem;
   }
-  .main-nav {
-    height: 60vh;
-  }
+
   .main-nav-link {
-    font-size: 8rem;
+    font-size: 10rem;
+  }
+
+  .section-hero {
+    height: 80vh;
+    width: 100%;
   }
   .content-txt-3 {
     font-size: 2.4rem;
@@ -129,9 +146,6 @@
 
   .heading-tertiary {
     font-size: 6rem;
-  }
-  .other-link-1 {
-    margin-left: 47rem;
   }
 
   .other-link-2 {
@@ -144,19 +158,18 @@
     font-size: 2.6rem;
   }
 
-  .text-project a {
+  .project-text {
     font-size: 4.8rem;
-  }
-  .h-line {
-    width: 102rem;
-  }
-  .btn-mobile-nav {
-    font-size: 0.7rem;
   }
 }
 
 /********* SMALLER TABLETS  BELOW 704px  *************/
 @media (max-width: 59em) {
+  .hover-img {
+    height: 70px;
+    width: 70px;
+    margin-left: 0;
+  }
   .heading-secondary {
     font-size: 7.8rem;
     line-height: 0.85;
@@ -166,6 +179,12 @@
   .content-txt-3 {
     font-size: 3.2rem;
     font-weight: 300;
+  }
+  .hero-description-1 {
+    font-size: 3.7rem;
+    letter-spacing: 10px;
+    line-height: 2.2;
+    font-weight: 400;
   }
 
   .heading-tertiary {
@@ -202,16 +221,34 @@
   .footer-link {
     font-size: 1.4rem;
   }
-  .h-line {
-    width: 78rem;
-  }
+
   .custom-shape-divider-bottom-1704281029 svg {
-    height: 20px;
+    height: 50px;
   }
 }
 
 /********* Phones BELOW 544px  *************/
 @media (max-width: 34em) {
+  .hover-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 0;
+  }
+  .hero {
+    text-align: center;
+  }
+
+  .box {
+    height: 30rem;
+    width: 30rem;
+    margin-right: 0;
+  }
+  .hero-description-1 {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    line-height: 1.7;
+  }
+
   .container {
     padding: 4.8rem 2.4rem 4.8rem 2.4rem;
   }
@@ -220,12 +257,7 @@
     line-height: 0.85;
     letter-spacing: 0.1;
   }
-  .main-nav {
-    height: 60vh;
-  }
-  .main-nav-link {
-    font-size: 6rem;
-  }
+
   .project-area {
     gap: 1.4rem;
   }
@@ -245,22 +277,19 @@
     width: 200px;
     height: 300px;
   }
-  .text-project a {
+  .project-text {
     font-size: 4rem;
   }
 
   .other-link-1 {
     font-size: 1.3rem;
-    margin-left: 18.5rem;
+    margin-left: 28rem;
   }
   .other-link-2 {
     font-size: 1.3rem;
     margin-left: 28rem;
   }
 
-  .h-line {
-    width: 60rem;
-  }
   .news-small {
     font-size: 1.6rem;
     color: #555;
@@ -296,7 +325,7 @@
     display: none;
   }
   .custom-shape-divider-bottom-1704281029 svg {
-    height: 50px;
+    height: 40px;
   }
   .section-footer {
     height: 60vh;
@@ -317,20 +346,25 @@
 
 /********* Phones BELOW 444px  *************/
 @media (max-width: 34em) {
-  .section-hero {
-    height: 50vh;
+  .hover-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 0;
   }
-  .main-nav {
-    height: 50vh;
+  .hero-text-box {
+    align-items: center;
   }
+
   .container {
     padding: 4.8rem 2.4rem 4.8rem 2.4rem;
   }
   .heading-primary {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .hero-description-1 {
     font-size: 3.2rem;
+    margin-bottom: 1rem;
+    margin-top: 2.4rem;
   }
 
   .hero-description-2 {
@@ -339,9 +373,10 @@
   .box {
     height: 15rem;
     width: 15rem;
-    margin-right: 4rem;
   }
-
+  .main-nav-link {
+    font-size: 6rem;
+  }
   .heading-secondary {
     font-size: 5.6rem;
     line-height: 0.85;
@@ -369,7 +404,7 @@
 
   .other-link-1 {
     font-size: 1.3rem;
-    margin-left: 9rem;
+    margin-left: 8rem;
   }
   .other-link-2 {
     font-size: 1.3rem;
@@ -380,17 +415,14 @@
     height: 250px;
   }
 
-  .h-line {
-    width: 47rem;
-  }
-  .text-project a {
-    font-size: 4rem;
+  .project-text {
+    font-size: 3.2rem;
   }
   .section-footer {
-    height: 30vh;
+    height: 60vh;
   }
   .custom-shape-divider-bottom-1704281029 svg {
-    height: 50px;
+    height: 20px;
   }
   .footer-logo {
     width: 100px;
@@ -415,9 +447,8 @@
 
 /********* Phones BELOW 400px  *************/
 @media (max-width: 25em) {
-  .box {
-    height: 12rem;
-    width: 12rem;
+  .hero-description-1 {
+    font-size: 2.4rem;
   }
   .hero-description-2 {
     font-size: 0.8rem;
@@ -426,9 +457,11 @@
     font-size: 2rem;
     width: 300px;
   }
-
-  .text-project {
-    font-size: 3rem;
+  .main-nav-link {
+    font-size: 6rem;
+  }
+  .project-text {
+    font-size: 2rem;
   }
   .single-project {
     width: 150px;
@@ -437,15 +470,25 @@
   .project-area {
     gap: 4rem;
   }
-  .h-line {
-    width: 60rem;
-  }
+
   .other-link-1 {
-    font-size: 1.3rem;
-    margin-left: 2rem;
+    font-size: 0.9rem;
+    margin-left: 0;
   }
   .other-link-2 {
-    font-size: 1.3rem;
-    margin-left: 10rem;
+    font-size: 0.9rem;
+    margin-left: 9rem;
+  }
+  .logo-col {
+    margin-right: 4rem;
+  }
+  .footer-logo {
+    margin-right: 2rem;
+  }
+  .address-col {
+    margin-top: 0.1rem;
+  }
+  .address {
+    font-size: 1.2rem;
   }
 }
